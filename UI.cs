@@ -176,6 +176,19 @@ namespace CivSem1Challenge2_CarSystem
         {
             //TODO: write code find the relevant car dealer by DealerId in this.CarDealers and return the number of listings
             // if num doesn't exist in CarDealers, return -1
+
+            //PSEUDOCODE:
+            //Create foreach loop around CarDealers to access Listings
+            //Create an if statement, to allow user input to be read and identified within the list
+            //print the Listings.Count for the specified DealerId
+            
+            foreach (CarDealer c in this.CarDealers)
+            {
+                {
+                if (c.DealerId == num)
+                return c.Listings.Count;
+                }
+            }
             return -1;
         }
 
