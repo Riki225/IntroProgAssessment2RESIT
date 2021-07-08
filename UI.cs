@@ -154,15 +154,15 @@ namespace CivSem1Challenge2_CarSystem
         }
 
         //TODO: complete for menu item 5.
-        // private int GetTotalCostCarDealers()
-        // {
-        //     int total = 0;
-        //     foreach (CarDealer c in this.CarDealers)
-        //     {
-        //         total += c.Listings.Count;
-        //     }
-        //         return total;
-        // }
+        private int GetTotalCostCarDealers()
+        {
+            int total = 0;
+            foreach (CarDealer c in this.CarDealers)
+            {
+                total += c.Listings.Count;
+            }
+                return total;
+        }
 
 
         //TODO: create the GetNumCars() method/function here
