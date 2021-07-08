@@ -87,6 +87,7 @@ namespace CivSem1Challenge2_CarSystem
                 case "4":
                     //TODO: Print the amount of cars in the system
                     // Create and call a method/function named GetNumCars() to do this.
+                    
                     break;
 
                 case "5":
@@ -161,13 +162,19 @@ namespace CivSem1Challenge2_CarSystem
 
         //TODO: create the GetNumCars() method/function here
 
-
         //---------------------
 
         private string GetCarDetails(string rego)
         {
             //TODO: write code find the relevant car in this.Cars and return the car's details
             // should use the method GetDetails() from Car
+            foreach (Car c in this.Cars)
+            {
+                if (rego == c.Registration)
+                {
+                    return c.GetDetails();
+                }
+            }
             return null;
         }
 
@@ -181,11 +188,11 @@ namespace CivSem1Challenge2_CarSystem
             //Create foreach loop around CarDealers to access Listings
             //Create an if statement, to allow user input to be read and identified within the list
             //print the Listings.Count for the specified DealerId
-            
+
             foreach (CarDealer c in this.CarDealers)
             {
                 {
-                if (c.DealerId == num)
+                if (num == c.DealerId)
                 return c.Listings.Count;
                 }
             }
