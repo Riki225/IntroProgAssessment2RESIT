@@ -243,23 +243,23 @@ namespace CivSem1Challenge2_CarSystem
             }
 
             //TODO: create and add the new car to the this.Cars list
-            // Listing newCar = new Listing(rego, make, model, yom, cost, price);
-            // this.Cars.Add(newCar);
+            Listing newCar = new Listing(rego, make, model, yom, cost, price);
+            this.Cars.Add(newCar);
             
 
-            // //TODO: add the car as a listing to the desired car dealer in this.CarDealers.  
-            // //      If the dealer doesn't exist let the user know and go back to the main menu.
-            // System.Console.Write("Enter car dealer id to add the car to: ");
-            // while(!int.TryParse(Console.ReadLine(), out dealerId)) {
-            //     System.Console.WriteLine("Invalid, enter again");
-            // }
-            // foreach (CarDealer c in this.CarDealers)
-            // {
-            //     if (dealerId == c.DealerId)
-            //     {
-            //         c.Listings.Add(newCar);
-            //     }
-            // }
+            //TODO: add the car as a listing to the desired car dealer in this.CarDealers.  
+            //      If the dealer doesn't exist let the user know and go back to the main menu.
+            System.Console.Write("Enter car dealer id to add the car to: ");
+            while(!int.TryParse(Console.ReadLine(), out dealerId)) {
+                System.Console.WriteLine("Invalid, enter again");
+            }
+            foreach (CarDealer c in this.CarDealers)
+            {
+                if (dealerId == c.DealerId)
+                {
+                    c.Listings.Add(newCar);
+                }
+            }
             // -----------------------
             // (optional - CREDIT TASK)  If the dealer doesn't exist keep asking until a valid dealer id is entered.
             //                           User may enter 9999 for no dealer for the car to be entered into
