@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Em6046rXUTJH23QqTs8IDn0g+OeXB2r9VTiRdW8CAgMUvrNFX47EbvXxJ6jmMmL9u4vDvYTBRW0L0nwUbg6KPQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\103475494\\Downloads\\CivSem1Challenge2-CarSystem\\CivSem1Challenge2-CarSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\103475494\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
